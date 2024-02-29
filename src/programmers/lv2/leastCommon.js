@@ -10,9 +10,7 @@ const gcd = (a, b) => {
 };
 
 // 최소공배수
-const lcm = (a, b) => {
-  return (a * b) / gcd(a, b);
-};
+const lcm = (a, b) => (a * b) / gcd(a, b);
 
 const solution = (arr) => {
   let answer = 0;
@@ -21,6 +19,7 @@ const solution = (arr) => {
 
   for (let i = 1; i < arr.length; i++) {
     value = lcm(value, arr[i]);
+    console.log(value);
   }
 
   answer = value;
