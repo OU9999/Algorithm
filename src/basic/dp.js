@@ -5,5 +5,5 @@ const fibo = (idx, memo = {}) => {
   return memo[idx];
 };
 
-const ret = fibo(10);
+const ret = fibo(1);
 console.log(ret);
